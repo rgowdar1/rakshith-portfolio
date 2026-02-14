@@ -30,11 +30,11 @@ export default function RootLayout({
         className={`min-h-screen flex flex-col text-gray-100 ${geistSans.variable} ${geistMono.variable} font-sans`}
       >
         <header className="w-full py-3 px-2 sm:px-6 bg-black/60 backdrop-blur-md shadow-md sticky top-0 z-10">
-          <div className="max-w-6xl mx-auto flex items-center justify-between">
-            <span className="text-2xl font-bold tracking-tight text-white">
+          <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center gap-3 sm:gap-4 sm:justify-between">
+            <span className="text-xl sm:text-2xl font-bold tracking-tight text-white whitespace-nowrap">
               Rakshith R
             </span>
-            <nav className="flex items-center space-x-6">
+            <nav className="w-full sm:w-auto flex flex-wrap items-center justify-center sm:justify-end gap-x-4 gap-y-2 sm:gap-6 text-sm sm:text-base">
               <a
                 href="#about"
                 className="text-gray-200 hover:text-blue-400 transition"
@@ -75,7 +75,7 @@ export default function RootLayout({
                 href="https://drive.google.com/file/d/176p90kPD0-mla9fSlw9fP2hgyLMXGd_I/view?usp=drive_link"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-4 py-2 rounded-full hover:from-blue-700 hover:to-purple-700 transition font-semibold text-sm"
+                className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-3 sm:px-4 py-2 rounded-full hover:from-blue-700 hover:to-purple-700 transition font-semibold text-sm"
               >
                 Resume
               </a>
