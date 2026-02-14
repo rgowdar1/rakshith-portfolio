@@ -2,15 +2,15 @@ import ContactForm from "../ContactForm";
 
 export default function ContactSection() {
   return (
-    <section id="contact" className="mb-16">
-      <h2 className="text-3xl font-bold mb-4 text-blue-400">Contact</h2>
+    <section id="contact" className="mb-10">
+      <h2 className="section-title text-2xl font-medium mb-4">Contact</h2>
       <div className="mb-6 flex items-center gap-4">
         <a
           href="https://www.linkedin.com/in/rakshith24/"
           target="_blank"
           rel="noopener noreferrer"
           title="LinkedIn"
-          className="inline-flex items-center justify-center w-11 h-11 rounded-full bg-[#0077B5] hover:opacity-90 transition"
+          className="inline-flex items-center justify-center w-11 h-11 rounded-full bg-[#0077B5] shadow-md shadow-sky-900/40 hover:opacity-90 transition"
         >
           <img
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
@@ -23,7 +23,7 @@ export default function ContactSection() {
           target="_blank"
           rel="noopener noreferrer"
           title="GitHub"
-          className="inline-flex items-center justify-center w-11 h-11 rounded-full bg-gray-900 border border-gray-600 hover:bg-gray-800 transition"
+          className="inline-flex items-center justify-center w-11 h-11 rounded-full bg-slate-900 border border-slate-500/60 shadow-md shadow-slate-900/40 hover:bg-slate-800 transition"
         >
           <img
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
@@ -36,7 +36,7 @@ export default function ContactSection() {
           target="_blank"
           rel="noopener noreferrer"
           title="Instagram"
-          className="inline-flex items-center justify-center w-11 h-11 rounded-full bg-gradient-to-r from-pink-500 via-rose-500 to-orange-400 hover:opacity-90 transition"
+          className="inline-flex items-center justify-center w-11 h-11 rounded-full bg-gradient-to-r from-pink-500 via-rose-500 to-orange-400 shadow-md shadow-rose-900/40 hover:opacity-90 transition"
         >
           <svg
             className="w-5 h-5 text-white"
@@ -48,11 +48,11 @@ export default function ContactSection() {
           </svg>
         </a>
         <a
-          href="https://drive.google.com/uc?export=download&id=176p90kPD0-mla9fSlw9fP2hgyLMXGd_I"
+          href="https://drive.google.com/uc?export=download&id=1UUIljrwn50zFKNZ6VMrnLmX4ShrEsvo3"
           target="_blank"
           rel="noopener noreferrer"
           title="Download Resume"
-          className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-purple-600 to-pink-600 px-4 py-2 text-white font-medium hover:from-purple-700 hover:to-pink-700 transition"
+          className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-fuchsia-600 to-pink-600 px-4 py-2 text-white font-medium shadow-md shadow-fuchsia-900/40 hover:from-fuchsia-500 hover:to-pink-500 transition"
         >
           <svg
             className="w-5 h-5 text-white"
@@ -71,7 +71,7 @@ export default function ContactSection() {
         </a>
       </div>
 
-      <p className="text-lg text-gray-300 mb-6">
+      <p className="text-base text-gray-300 mb-6">
         Feel free to reach out for collaborations or just a friendly hello!
       </p>
       <ContactForm />

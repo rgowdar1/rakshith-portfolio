@@ -13,11 +13,21 @@
 }
 
 body {
-  background: linear-gradient(270deg, #232526, #414345, #232526, #414345);
-  background-size: 800% 800%;
-  animation: gradientMove 18s ease infinite;
+  position: relative;
+  overflow-x: hidden;
+  background: linear-gradient(
+    125deg,
+    #020617 0%,
+    #0f172a 20%,
+    #0b3a63 42%,
+    #0f766e 62%,
+    #1e3a8a 82%,
+    #020617 100%
+  );
+  background-size: 320% 320%;
+  animation: auroraFlow 9s ease-in-out infinite;
   color: #f3f4f6;
-  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  font-family: var(--font-ui-sans), "Segoe UI", sans-serif;
 }
 
 p, li, span, div {
@@ -26,17 +36,23 @@ p, li, span, div {
 
 h1, h2, h3, h4, h5, h6 {
   color: #fff;
-  font-weight: 700;
-  letter-spacing: 0.02em;
+  font-weight: 500;
+  letter-spacing: 0.01em;
 }
 a:hover {
   color: #f472b6;
 }
 
-@keyframes gradientMove {
-  0% {background-position: 0% 50%;}
-  50% {background-position: 100% 50%;}
-  100% {background-position: 0% 50%;}
+@keyframes auroraFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .reveal {
@@ -68,4 +84,40 @@ a:hover {
   body {
     animation: none;
   }
+}
+
+.section-title {
+  color: #7dd3fc;
+  letter-spacing: 0.01em;
+}
+
+.panel-modern {
+  border: 1px solid rgba(71, 85, 105, 0.55);
+  background:
+    radial-gradient(circle at top right, rgba(34, 211, 238, 0.1), transparent 45%),
+    radial-gradient(circle at bottom left, rgba(56, 189, 248, 0.08), transparent 40%),
+    rgba(15, 23, 42, 0.62);
+  border-radius: 1rem;
+  box-shadow: 0 10px 32px rgba(2, 132, 199, 0.14);
+}
+
+.timeline-rail {
+  border-left: 1px solid rgba(56, 189, 248, 0.38);
+}
+
+.timeline-card {
+  border: 1px solid rgba(71, 85, 105, 0.6);
+  background: rgba(15, 23, 42, 0.58);
+  border-radius: 0.9rem;
+  transition: all 0.25s ease;
+}
+
+.timeline-card:hover {
+  border-color: rgba(56, 189, 248, 0.55);
+  box-shadow: 0 12px 28px rgba(6, 182, 212, 0.16);
+}
+
+.chip-modern {
+  border: 1px solid rgba(148, 163, 184, 0.28);
+  background: rgba(30, 41, 59, 0.6);
 }

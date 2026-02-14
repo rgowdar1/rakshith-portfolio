@@ -40,7 +40,7 @@ export default function ContactForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="max-w-2xl space-y-5">
+    <form onSubmit={handleSubmit} className="panel-modern max-w-2xl space-y-5 p-5 sm:p-6">
       <input
         type="hidden"
         name="_subject"
@@ -66,7 +66,7 @@ export default function ContactForm() {
           name="name"
           placeholder="Enter your name"
           required
-          className="w-full rounded-xl bg-slate-900/70 border border-slate-700 px-4 py-3 text-gray-100 placeholder:text-gray-500 shadow-sm transition focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500"
+          className="w-full rounded-xl bg-slate-900/80 border border-slate-600/80 px-4 py-3 text-gray-100 placeholder:text-gray-500 shadow-sm transition focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:border-cyan-400"
         />
       </div>
       <div className="space-y-2">
@@ -79,7 +79,7 @@ export default function ContactForm() {
           name="email"
           placeholder="you@example.com"
           required
-          className="w-full rounded-xl bg-slate-900/70 border border-slate-700 px-4 py-3 text-gray-100 placeholder:text-gray-500 shadow-sm transition focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500"
+          className="w-full rounded-xl bg-slate-900/80 border border-slate-600/80 px-4 py-3 text-gray-100 placeholder:text-gray-500 shadow-sm transition focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:border-cyan-400"
         />
       </div>
       <div className="space-y-2">
@@ -92,13 +92,13 @@ export default function ContactForm() {
           rows={5}
           placeholder="Tell me about your project or idea..."
           required
-          className="w-full rounded-xl bg-slate-900/70 border border-slate-700 px-4 py-3 text-gray-100 placeholder:text-gray-500 shadow-sm transition focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 resize-y"
+          className="w-full rounded-xl bg-slate-900/80 border border-slate-600/80 px-4 py-3 text-gray-100 placeholder:text-gray-500 shadow-sm transition focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:border-cyan-400 resize-y"
         />
       </div>
       <button
         type="submit"
         disabled={isSubmitting}
-        className="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-cyan-600 to-blue-600 px-7 py-2.5 font-semibold text-white shadow-lg shadow-cyan-900/30 hover:from-cyan-500 hover:to-blue-500 transition disabled:opacity-60 disabled:cursor-not-allowed"
+        className="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-cyan-600 to-blue-600 px-7 py-2.5 font-medium text-white shadow-lg shadow-cyan-900/30 hover:from-cyan-500 hover:to-blue-500 transition disabled:opacity-60 disabled:cursor-not-allowed"
       >
         {isSubmitting ? "Sending..." : "Send Message"}
       </button>

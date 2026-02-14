@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { JetBrains_Mono, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import ScrollToTop from "../components/ScrollToTop";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const plusJakartaSans = Plus_Jakarta_Sans({
+  variable: "--font-ui-sans",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const jetBrainsMono = JetBrains_Mono({
+  variable: "--font-ui-mono",
   subsets: ["latin"],
 });
 
@@ -27,55 +27,55 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`min-h-screen flex flex-col text-gray-100 ${geistSans.variable} ${geistMono.variable} font-sans`}
+        className={`min-h-screen flex flex-col text-gray-100 ${plusJakartaSans.variable} ${jetBrainsMono.variable} font-sans`}
       >
-        <header className="w-full py-3 px-2 sm:px-6 bg-black/60 backdrop-blur-md shadow-md sticky top-0 z-10">
-          <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center gap-3 sm:gap-4 sm:justify-between">
-            <span className="text-xl sm:text-2xl font-bold tracking-tight text-white whitespace-nowrap">
+        <header className="w-full py-3 px-2 sm:px-6 sticky top-0 z-20">
+          <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center gap-3 sm:gap-4 sm:justify-between rounded-2xl border border-cyan-400/20 bg-slate-950/70 px-3 sm:px-5 py-3 backdrop-blur-xl shadow-[0_8px_30px_rgba(6,182,212,0.14)]">
+            <span className="text-xl sm:text-2xl font-medium tracking-tight text-white whitespace-nowrap">
               Rakshith R
             </span>
             <nav className="w-full sm:w-auto flex flex-wrap items-center justify-center sm:justify-end gap-x-4 gap-y-2 sm:gap-6 text-sm sm:text-base">
               <a
                 href="#about"
-                className="text-gray-200 hover:text-blue-400 transition"
+                className="text-slate-200/90 hover:text-cyan-300 transition rounded-full px-2.5 py-1 hover:bg-cyan-500/10"
               >
                 About
               </a>
               <a
                 href="#education"
-                className="text-gray-200 hover:text-blue-400 transition"
+                className="text-slate-200/90 hover:text-cyan-300 transition rounded-full px-2.5 py-1 hover:bg-cyan-500/10"
               >
                 Education
               </a>
               <a
                 href="#experience"
-                className="text-gray-200 hover:text-blue-400 transition"
+                className="text-slate-200/90 hover:text-cyan-300 transition rounded-full px-2.5 py-1 hover:bg-cyan-500/10"
               >
                 Experience
               </a>
               <a
                 href="#skills"
-                className="text-gray-200 hover:text-blue-400 transition"
+                className="text-slate-200/90 hover:text-cyan-300 transition rounded-full px-2.5 py-1 hover:bg-cyan-500/10"
               >
                 Skills
               </a>
               <a
                 href="#projects"
-                className="text-gray-200 hover:text-blue-400 transition"
+                className="text-slate-200/90 hover:text-cyan-300 transition rounded-full px-2.5 py-1 hover:bg-cyan-500/10"
               >
                 Projects
               </a>
               <a
                 href="#contact"
-                className="text-gray-200 hover:text-blue-400 transition"
+                className="text-slate-200/90 hover:text-cyan-300 transition rounded-full px-2.5 py-1 hover:bg-cyan-500/10"
               >
                 Contact
               </a>
               <a
-                href="https://drive.google.com/file/d/176p90kPD0-mla9fSlw9fP2hgyLMXGd_I/view?usp=drive_link"
+                href="https://drive.google.com/file/d/1UUIljrwn50zFKNZ6VMrnLmX4ShrEsvo3/view?usp=drive_link"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-3 sm:px-4 py-2 rounded-full hover:from-blue-700 hover:to-purple-700 transition font-semibold text-sm"
+                className="bg-gradient-to-r from-cyan-500 to-blue-600 text-white px-3 sm:px-4 py-2 rounded-full hover:from-cyan-400 hover:to-blue-500 transition font-medium text-sm shadow-md shadow-cyan-900/40"
               >
                 Resume
               </a>
